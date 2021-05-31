@@ -2,8 +2,14 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
 }
-/*Partie header */
+.corps{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
+}
 
+/*Partie header */
 
 header{
    display: flex;
@@ -26,8 +32,11 @@ nav a{
 }
 /* Partie section */
 
-
-.icon{
+.localisation{
+    display: flex;
+    align-items: baseline;
+}
+post i{
     display: inline-flex;
     background-color: #F2F2F2;
     padding: 10px;
@@ -57,20 +66,28 @@ nav a{
 
 /* Filtres */
 
+
 nav{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    
 }
-nav p{
+.filtres{
+    display: flex;
+    align-items: center;
+}
+.btn1,.btn2,.btn3,.btn4{
     display: inline-block;
     border: 2px solid #F2F2F2;
-    border-radius: 25% 25%;
-    padding: 8px;
-    list-style: none;
-    color: black;
+    border-radius: 35px;
+    padding: 1px;
+    padding-right: 10px;
+    margin-left: 20px;
+    border-left: 0px #DEEBFF;
+    border-bottom-left-radius: 55pt 25pt;
+    border-top-left-radius: 38pt 30pt;
     
 }
+
 nav i{
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -78,29 +95,44 @@ nav i{
     padding: 10px;
     color: #0065fc;
 }
+.filtre a{
+    color: black;
+    display: inline-flex;
+}
 
 /* Partie footer */
 footer {
     display: flex;
     background-color: #F2F2F2;
-    align-items: flex-start;
-    
-}
-
-footer a:visited {
-    
-    color: black;
-}
-
-footer a,li{
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
+   
 }
 footer ul{
-    padding-right: 200px;
-}
-footer h3{
     display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+footer a:visited {
+    color: black;
+}
+footer li{
+    list-style: none;
+    display: inline;
+    justify-content: space-around;
 
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#propos{
+    padding-right: 20%;
+    padding-left: 2%;
+}
+#hébergements{
+    padding-right: 20%;
+}
+#Assistance{
+    padding-right: 20%;
 }

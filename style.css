@@ -8,8 +8,25 @@ body {
     flex-wrap: wrap;
     padding: 2%;
 }
+@media screen and (max-width:812px) 
+{
+    .corps{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    
+}
 
 /*Partie header */
+
+@media screen and (max-width:812px) 
+{
+    .inscrire{
+        display: flex;
+    }
+    
+}
 
 header{
    display: flex;
@@ -127,12 +144,29 @@ footer a{
 }
 
 #propos{
-    padding-right: 20%;
+    padding-right: 15%;
     padding-left: 2%;
+    width: 70%;
 }
 #hébergements{
-    padding-right: 20%;
+    padding-right: 15%;
+    width: 70%;
 }
 #Assistance{
-    padding-right: 20%;
+    padding-right: 15%;
+    width: 70%;
+}
+@media screen and (max-width:812px) 
+{
+    #propos
+    {
+        
+        padding: 0%;
+        width: 50%;
+    }
+    footer{
+        flex-direction: column;
+        display: grid;
+    }
+    
 }

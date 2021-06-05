@@ -5,15 +5,15 @@ body {
 .corps{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 2%;
+    width: 95%;
+    margin: auto;
+    align-content: center;
 }
 @media screen and (max-width:812px) 
 {
     .corps{
         display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
+        flex-wrap: wrap;   
     }
     
 }
@@ -25,6 +25,12 @@ body {
     .inscrire{
         display: flex;
     }
+    nav li{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
     
 }
 
@@ -35,25 +41,29 @@ header{
 }
 
 nav li{
-    margin-right: 100px;
+    margin-left: 50px;
 }
 nav ul{
     list-style-type: none;
     display: flex;
-
+    
 }
 
 nav a{
     text-decoration: none;
     color: #0065fc;
 }
+nav a:hover{
+    
+}
+
 /* Partie section */
 
 .localisation{
     display: flex;
     align-items: baseline;
 }
-post i{
+form i{
     display: inline-flex;
     background-color: #F2F2F2;
     padding: 10px;
@@ -119,21 +129,24 @@ nav i{
 
 /* Partie footer */
 footer {
+    background-color: #F2F2F2 ;
+}
+#background{
     display: flex;
-    background-color: #F2F2F2;
-   
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    
+
 }
 footer ul{
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
+    padding: 0%;
 }
 footer a:visited {
     color: black;
 }
 footer li{
     list-style: none;
-    display: inline;
     justify-content: space-around;
 
 }
@@ -143,30 +156,17 @@ footer a{
     color: black;
 }
 
-#propos{
-    padding-right: 15%;
-    padding-left: 2%;
-    width: 70%;
-}
-#hébergements{
-    padding-right: 15%;
-    width: 70%;
-}
-#Assistance{
-    padding-right: 15%;
-    width: 70%;
-}
+
 @media screen and (max-width:812px) 
 {
     #propos
     {
-        
-        padding: 0%;
-        width: 50%;
+        padding: 0%;   
     }
-    footer{
+    #background{
+        display: flex;
         flex-direction: column;
-        display: grid;
+        
     }
     
 }

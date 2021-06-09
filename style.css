@@ -9,35 +9,53 @@ body {
     margin: auto;
     align-content: center;
 }
-@media screen and (max-width:812px) 
+@media all and (max-width:812px) 
 {
+    body{
+        font-weight: bold
+    }
     .corps{
         display: flex;
-        flex-wrap: wrap;   
+        width: 95%;
     }
-    
+    .inscrire{
+        display: flex;
+    }
 }
 
 /*Partie header */
 
-@media screen and (max-width:812px) 
+@media all and (max-width:812px) 
 {
-    .inscrire{
-        display: flex;
-    }
+
     nav li{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
     }
-    
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    header #menu2{
+        display: flex;
+    }
+    header #logo{
+        display: flex;
+    }
+    header .inscrire{
+        display: flex;
+    }
 }
 
 header{
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
+}
+#menu2{
+    display: flex;
 }
 
 nav li{
@@ -59,6 +77,17 @@ nav a:hover{
 
 /* Partie section */
 
+@media all and (max-width:812px)
+{
+    .localisation{
+        display: flex;
+       justify-content: center;
+    }
+    section h1, p{
+        display: flex;
+        justify-content: center;
+    }
+}
 .localisation{
     display: flex;
     align-items: baseline;
@@ -91,9 +120,17 @@ form i{
     margin-left: 0px;
 }
 
+
 /* Filtres */
 
-
+@media all and (max-width:812px)
+{
+    nav .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 nav{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -130,14 +167,20 @@ nav i{
 /* Partie footer */
 footer {
     background-color: #F2F2F2 ;
+   
 }
 #background{
     display: flex;
-    width: 100%;
-    margin: auto;
-    justify-content: space-between;
-    
-
+    margin: 2%;
+}
+#propos{
+    margin-right: auto;
+}
+#hébergements{
+    margin-right: auto;
+}
+#Assistance{
+    margin-right: auto;
 }
 footer ul{
     padding: 0%;
@@ -156,8 +199,7 @@ footer a{
     color: black;
 }
 
-
-@media screen and (max-width:812px) 
+@media all and (max-width:812px) 
 {
     #propos
     {
@@ -166,6 +208,7 @@ footer a{
     #background{
         display: flex;
         flex-direction: column;
+        width: 100%;
         
     }
     

@@ -9,45 +9,9 @@ body {
     margin: auto;
     align-content: center;
 }
-@media all and (max-width:812px) 
-{
-    body{
-        font-weight: bold
-    }
-    .corps{
-        display: flex;
-        width: 95%;
-    }
-    .inscrire{
-        display: flex;
-    }
-}
+
 
 /*Partie header */
-
-@media all and (max-width:812px) 
-{
-
-    nav li{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    nav ul{
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-    header #menu2{
-        display: flex;
-    }
-    header #logo{
-        display: flex;
-    }
-    header .inscrire{
-        display: flex;
-    }
-}
 
 header{
    display: flex;
@@ -71,23 +35,18 @@ nav a{
     text-decoration: none;
     color: #0065fc;
 }
-nav a:hover{
-    
+header nav {
+    display: flex;
+    align-items: center;
 }
+.inscrire{
+    padding-left: 50px;
+}
+
+
 
 /* Partie section */
 
-@media all and (max-width:812px)
-{
-    .localisation{
-        display: flex;
-       justify-content: center;
-    }
-    section h1, p{
-        display: flex;
-        justify-content: center;
-    }
-}
 .localisation{
     display: flex;
     align-items: baseline;
@@ -123,14 +82,6 @@ form i{
 
 /* Filtres */
 
-@media all and (max-width:812px)
-{
-    nav .filtres{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
 nav{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -162,6 +113,75 @@ nav i{
 .filtre a{
     color: black;
     display: inline-flex;
+}
+
+/* Info */
+.info .fas{
+    color: #0065fc;
+    font-size: 12px;
+    padding: 7px 11px 7px 11px;
+    border: solid 1px #D9D9D9;
+    border-radius: 2000px;
+    margin-right: 10px;
+}
+.info p{
+    font-size: 12px;
+    display: inline;
+}
+.info{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Partie article */
+
+.héberg{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#case1{
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#case1 img{
+    height: 100px;
+   
+    
+}
+#star{
+    color: #0065fc;
+}
+article h4, p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+article h3{
+    font-weight:bolder
+}
+article a{
+    text-decoration: none;
+}
+article a:visited {
+    color: black;
+}
+#afficher{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Partie aside */
+
+.populaire{
+    background-color: #F2F2F2;
+    border-radius: 10px;
 }
 
 /* Partie footer */
@@ -199,8 +219,53 @@ footer a{
     color: black;
 }
 
-@media all and (max-width:812px) 
+/* RESPONSIVE */
+
+/* Small*/
+@media screen and (max-width: 576px) 
 {
+    body{
+        font-weight: bold
+    }
+    .corps{
+        display: flex;
+        width: 95%;
+    }
+    .inscrire{
+        display: flex;
+    }
+    nav li{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    header #menu2{
+        display: flex;
+    }
+    header #logo{
+        display: flex;
+    }
+    header .inscrire{
+        display: flex;
+    }
+    .localisation{
+        display: flex;
+       justify-content: center;
+    }
+    section h1, p{
+        display: flex;
+        justify-content: center;
+    }
+    nav .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     #propos
     {
         padding: 0%;   
@@ -209,7 +274,17 @@ footer a{
         display: flex;
         flex-direction: column;
         width: 100%;
-        
     }
+}
+/* medium */
+@media screen and (max-width: 768px)
+{
+    
+}
+
+/* large */
+
+@media screen and ( max-width: 1200px)
+{ 
     
 }

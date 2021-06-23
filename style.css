@@ -134,29 +134,46 @@ nav i{
 }
 
 /* Partie article */
-
-.héberg{
+.hebergement{
+    font-weight: bolder;
+    font-size: 18px;
     background-color: #F2F2F2;
-    border-radius: 10px;
-    padding-left: 5%;
-    padding-top: 15px;
+    width: 95%;
+    margin: auto;
     padding-bottom: 15px;
+    padding-top: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-#case1{
-    height: max-content;
-    width: max-content;
+.hebergement h3{
+    margin-left: 80px;
+}
+
+.heberg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    width: 95%;
+    margin: auto;
+}
+#case{
+    margin-bottom: 20px;
     background-color: white;
     padding: 5px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    border-radius: 20px;
+
 }
-#case1 img{
-    height: 100px;
+#case img{
    
-    
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+
 }
+
 #star{
     color: #0065fc;
 }
@@ -177,11 +194,44 @@ article a:visited {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#afficher h3{
+    margin-left: 80px;
+    font-size: 18px;
+}
+figure{
+    min-width: 200px;
+    min-height: 100px;
+}
+#afficher{
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    width: 95%;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
 /* Partie aside */
 
 .populaire{
     background-color: #F2F2F2;
+    width: 95%;
+    margin: auto;
     border-radius: 10px;
+}
+#lstar{
+    color: #0065fc;
+}
+
+/* Partie artside */
+
+.artside{
+    display: flex;
+    flex-direction: row;
+
 }
 
 /* Partie footer */
@@ -196,7 +246,7 @@ footer {
 #propos{
     margin-right: auto;
 }
-#hébergements{
+#hebergements{
     margin-right: auto;
 }
 #Assistance{

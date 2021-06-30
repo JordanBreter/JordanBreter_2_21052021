@@ -145,8 +145,8 @@ nav i{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.hebergement h3{
-    margin-left: 80px;
+.hebergement h2{
+    margin-left: 40px;
 }
 
 .heberg{
@@ -156,33 +156,45 @@ nav i{
     background-color: #F2F2F2;
     width: 95%;
     margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
-#case{
+a.bloc-link{
+    flex: 1 30%;
+}
+article{
+    width: 80%;
+    margin:auto
+}
+article figure{
     margin-bottom: 20px;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
 
 }
-#case img{
+article figure img{
    
-    width: 240px;
-    height: 140px;
+    width: 100%;
+    height: 100px;
     object-fit: cover;
-    display: flex;
-    margin: auto;
-
+    border-radius: 20px 20px 0px 0px;
 }
 
-#star{
+.star{
     color: #0065fc;
+    margin-left: 5px;
 }
-article h4, p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+article h3, article p {
+    margin: 5px;
 }
 article h3{
-    font-weight:bolder
+    font-weight: bolder;
+}
+article h2{
+    font-weight: bold;
+    font-size: 18px;
+
 }
 article a{
     text-decoration: none;
@@ -195,7 +207,7 @@ article a:visited {
     margin-bottom: 20px;
 }
 #afficher h3{
-    margin-left: 80px;
+    margin-left: 40px;
     font-size: 18px;
 }
 figure{
@@ -207,8 +219,6 @@ figure{
     background-color: #F2F2F2;
     width: 95%;
     margin: auto;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -216,14 +226,53 @@ figure{
 
 /* Partie aside */
 
+aside{
+    width: 30%;
+    margin: auto;
+}
+
 .populaire{
     background-color: #F2F2F2;
     width: 95%;
     margin: auto;
     border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 #lstar{
     color: #0065fc;
+}
+aside figure{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+aside figure img{
+    width: 110px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+aside figcaption{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+aside a{
+    text-decoration: none;
+}
+aside :visited{
+    color: black;
+}
+.popicone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 /* Partie artside */

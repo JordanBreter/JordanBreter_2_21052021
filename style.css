@@ -18,7 +18,7 @@ header{
    justify-content: space-between;
    align-items: flex-end;
 }
-#menu2{
+.menu2{
     display: flex;
 }
 
@@ -138,7 +138,6 @@ nav i{
     font-weight: bolder;
     font-size: 18px;
     background-color: #F2F2F2;
-    width: 95%;
     margin: auto;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -154,7 +153,6 @@ nav i{
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width: 95%;
     margin: auto;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -171,7 +169,7 @@ article figure{
     background-color: white;
     padding: 5px;
     border-radius: 20px;
-
+    box-shadow: 10px 10px 10px #C3C3C3;
 }
 article figure img{
    
@@ -208,9 +206,9 @@ article a:visited {
 }
 #afficher h3{
     margin-left: 40px;
-    font-size: 18px;
+    font-size: 14px;
 }
-figure{
+article figure{
     min-width: 200px;
     min-height: 100px;
 }
@@ -229,17 +227,16 @@ figure{
 aside{
     width: 30%;
     margin: auto;
+    display: flex;
 }
 
 .populaire{
     background-color: #F2F2F2;
-    width: 95%;
-    margin: auto;
+    margin-left: 25px;
     border-radius: 10px;
     padding-bottom: 10px;
-    padding-top: 10px;
 }
-#lstar{
+.lstar{
     color: #0065fc;
 }
 aside figure{
@@ -250,6 +247,7 @@ aside figure{
     width: 85%;
     margin: auto;
     margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #C3C3C3;
 }
 aside figure img{
     width: 110px;
@@ -282,6 +280,56 @@ aside :visited{
     flex-direction: row;
 
 }
+/* Partie section */
+
+
+section figure{
+    border-radius: 0px 0px 15px 15px;
+    
+}
+section figcaption h3{
+    padding: 5px;
+    padding-left: 10px;
+}
+
+section a{
+    display: flex;
+    text-decoration: none;
+    
+}
+section :visited{
+    color: black;
+}
+section figure img{
+    border-radius: 15px 15px 0px 0px;
+}
+.big img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+}
+.small img{
+    object-fit: cover;
+    height: 115px;
+    width: 200px;
+}
+
+.allactivity{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.smallactivity{
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #f2f2f2;
+}
+
+/* utiliser un border sur les titres ex: vieux port*/
 
 /* Partie footer */
 footer {
@@ -320,70 +368,156 @@ footer a{
 
 /* RESPONSIVE */
 
-/* Small*/
-@media screen and (max-width: 576px) 
-{
-    body{
-        font-weight: bold
-    }
-    .corps{
-        display: flex;
-        width: 95%;
-    }
-    .inscrire{
-        display: flex;
-    }
-    nav li{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+/* large */
 
-    nav ul{
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-    header #menu2{
-        display: flex;
-    }
-    header #logo{
-        display: flex;
-    }
-    header .inscrire{
-        display: flex;
-    }
-    .localisation{
-        display: flex;
-       justify-content: center;
-    }
-    section h1, p{
-        display: flex;
-        justify-content: center;
-    }
-    nav .filtres{
+@media screen and ( max-width: 1200px){ 
+    #background{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
-    #propos
-    {
-        padding: 0%;   
+    #propos{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+    #hebergements{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+    #Assistance{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+    footer{
+        width: 100%;
+    }
+}
+/* medium */
+@media screen and (max-width: 768px){
+    #background{
+        display: flex;
+        flex-direction: column;
+    }
+    #propos{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+    #hebergements{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+    #Assistance{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: large;
+    }
+}
+
+/* Small*/
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .corps{
+        margin: 0px;
+        display: flex;
+    }
+    header{
+
+    }
+    .artside{
+        display: flex;
+        flex-direction: column;
     }
     #background{
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin: 0px;
     }
-}
-/* medium */
-@media screen and (max-width: 768px)
-{
-    
-}
-
-/* large */
-
-@media screen and ( max-width: 1200px)
-{ 
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .allactivity{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    section figure{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+    section a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .big img{
+        object-fit: cover;
+        height: 100px;
+        width: 230px;
+    }
+    .small img{
+        object-fit: cover;
+        height: 100px;
+        width: 230px;
+    }
+    footer{
+        width: 100%;
+    }
+    #propos{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: larger;
+    }
+    #hebergements{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: larger;
+    }
+    #Assistance{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 20px;
+        flex-direction: column;
+        font-size: larger;
+    }
     
 }

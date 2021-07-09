@@ -374,6 +374,20 @@ footer a{
 /* large */
 
 @media screen and ( max-width: 1200px){ 
+
+    article{
+        display: block;
+        margin-top: 20px;
+    }
+    aside{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .artside{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     #background{
         display: flex;
         flex-direction: column;
@@ -408,6 +422,45 @@ footer a{
 }
 /* medium */
 @media screen and (max-width: 768px){
+
+    article{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 85%;
+    }
+    article figure{
+        width: 100%;
+    }
+    .hebergement{
+        background-color: white;
+    }
+    .heberg{
+        background-color: white;
+    }
+    #afficher{
+        background-color: white;
+    }
+    aside{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .small img{
+        object-fit: cover;
+        height: 115px;
+        width: 290px;
+    }
+    .big img{
+        object-fit: cover;
+        height: 300px;
+        width: 210px;
+    }
+    .artside{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     #background{
         display: flex;
         flex-direction: column;
@@ -453,6 +506,10 @@ footer a{
     header{
 
     }
+    aside{
+        display: block;
+        margin-top: 20px;
+    }
     .artside{
         display: flex;
         flex-direction: column;
@@ -494,6 +551,15 @@ footer a{
         object-fit: cover;
         height: 100px;
         width: 230px;
+    }
+    aside{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .artside{
+        display: flex;
+        flex-direction: column-reverse;
     }
     footer{
         width: 100%;

@@ -2,6 +2,9 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
 }
+body a:hover{
+    color: red;
+}
 .corps{
     display: flex;
     flex-direction: column;
@@ -89,6 +92,7 @@ nav{
 .filtres{
     display: flex;
     align-items: center;
+    font-size: 1.2em;
 }
 .btn1,.btn2,.btn3,.btn4{
     display: inline-block;
@@ -113,6 +117,8 @@ nav i{
 .filtre a{
     color: black;
     display: inline-flex;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 /* Info */
@@ -145,60 +151,64 @@ nav i{
     border-top-right-radius: 15px;
 }
 .hebergement h2{
-    margin-left: 40px;
+    margin-left: 25px;
 }
 
 .heberg{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #F2F2F2;
-    margin: auto;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 a.bloc-link{
     flex: 1 30%;
 }
-article{
-    width: 80%;
-    margin:auto
+.bloc-hebergement{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    flex: 70%;
 }
-article figure{
+.bloc-hebergement figure{
     margin-bottom: 20px;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px #C3C3C3;
 }
-article figure img{
-   
+.bloc-hebergement figure img{
     width: 100%;
-    height: 100px;
+    height: 140px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-
+.grass{
+    font-size: 1.1em;
+    font-weight:bolder
+}
 .star{
     color: #0065fc;
     margin-left: 5px;
 }
-article h3, article p {
+.grey{
+    color: #C3C3C3;
+}
+.bloc-hebergement h3, .bloc-hebergement p {
     margin: 5px;
 }
-article h3{
+.bloc-hebergement h3{
     font-weight: bolder;
 }
-article h2{
+.bloc-hebergement h2{
     font-weight: bold;
     font-size: 18px;
 
 }
-article a{
+.bloc-hebergement a{
     text-decoration: none;
     color: black;
 }
-article a:visited {
+.bloc-hebergement a:visited {
     color: black;
 }
 #afficher{
@@ -209,26 +219,25 @@ article a:visited {
     margin-left: 40px;
     font-size: 14px;
 }
-article figure{
+.bloc-hebergement figure{
     min-width: 200px;
-    min-height: 100px;
+    margin: 15px;
 }
 #afficher{
-    margin-top: 20px;
+    display: flex;
     background-color: #F2F2F2;
     width: 95%;
-    margin: auto;
     padding-top: 15px;
-    padding-bottom: 15px;
-
 }
 
 /* Partie aside */
 
 aside{
-    width: 30%;
-    margin: auto;
     display: flex;
+    background-color: #F2F2F2;
+    margin-left: 25px;
+    border-radius: 10px;
+    flex: 30%;
 }
 
 .populaire{
@@ -245,23 +254,26 @@ aside figure{
     background-color: white;
     padding: 5px;
     border-radius: 20px;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 20px;
+    width: 100%;
     box-shadow: 10px 10px 10px #C3C3C3;
 }
 aside figure img{
     width: 110px;
-    height: 120px;
+    max-width: 40%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+    flex: 1 40%;
 }
 aside figcaption{
     display: flex;
     flex-direction: column;
     padding: 5px;
+    flex: 0 60%;
 }
 aside a{
+    display: flex;
+    height: 200px;
     text-decoration: none;
     color: black;
 }
@@ -274,20 +286,25 @@ aside :visited{
     justify-content: space-between;
     margin: 20px;
 }
+.hotelprix{
+    flex: 100%;
+}
 
 /* Partie artside */
 
 .artside{
     display: flex;
-    flex-direction: row;
-
 }
 /* Partie section */
 
 
 section figure{
     border-radius: 0px 0px 15px 15px;
-    
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #f2f2f2;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 section figcaption h3{
     padding: 5px;
@@ -305,35 +322,38 @@ section :visited{
 }
 section figure img{
     border-radius: 15px 15px 0px 0px;
+    width: 100%;
 }
 .big img{
     object-fit: cover;
-    height: 300px;
-    width: 200px;
+    height: 400px;
+}
+.big{
+    width: 350px;
 }
 .small img{
     object-fit: cover;
-    height: 115px;
-    width: 200px;
+}
+.small{
+    width: 320px;
 }
 
 .allactivity{
     display: flex;
-    flex-wrap: wrap;
+    flex: 1 25%;
     
 }
 .smallactivity{
     display: flex;
     flex-direction: column;
 }
-.block{
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px #f2f2f2;
+.smallactivity img{
+    height: 155px;
+    width: 100%;
 }
+.allactivity figure{
 
-/* utiliser un border sur les titres ex: vieux port*/
-
+}
 /* Partie footer */
 footer {
     background-color: #F2F2F2 ;
@@ -375,9 +395,10 @@ footer a{
 
 @media screen and ( max-width: 1200px){ 
 
-    article{
+    .bloc-hebergement{
         display: block;
         margin-top: 20px;
+        background-color: white;
     }
     aside{
         display: block;
@@ -423,16 +444,15 @@ footer a{
 /* medium */
 @media screen and (max-width: 768px){
 
-    article{
+    .bloc-hebergement{
         display: block;
         margin-top: 20px;
         margin-left: 0px;
         margin-right: 0px;
         width: 85%;
+        background-color: white;
     }
-    article figure{
-        width: 100%;
-    }
+
     .hebergement{
         background-color: white;
     }

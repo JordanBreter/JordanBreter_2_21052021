@@ -19,9 +19,8 @@ body a:hover{
 header{
    display: flex;
    justify-content: space-between;
-   /* align-items: flex-end; *//* modif */
 }
-#menu {/* modif */
+#menu {
   display: flex;
   align-items: center;
   font-size: 1.1em;
@@ -48,11 +47,11 @@ header nav {
     display: flex;
     align-items: center;
 }
-.inscrire{/* modif */
+.inscrire{
     padding-left: 50px;
   align-self: center;
 }
-.inscrire a {/* modif */
+.inscrire a {
   text-decoration: none;
 }
 
@@ -102,12 +101,12 @@ nav{
     display: flex;
     align-items: center;
     font-size: 1.2em;
-    flex-wrap: wrap;/* modif */
+    flex-wrap: wrap;
 }
 #title__filtres {
   margin-right: 50px;
 }
-.btn1,.btn2,.btn3,.btn4{/* modif */
+.btn1,.btn2,.btn3,.btn4{
     display: flex;
     align-items: center;
     border-radius: 40px;
@@ -118,7 +117,7 @@ nav{
   
 }
 
-nav i{/* modif */
+nav i{
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -184,7 +183,7 @@ nav i{/* modif */
     justify-content: space-around;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin: 0 20px;/* modif */
+    margin: 0 20px;
 }
 a.bloc-link{
     flex: 1 30%;
@@ -192,7 +191,7 @@ a.bloc-link{
 .bloc-hebergement{
     background-color: #F2F2F2;
     border-radius: 15px;
-    flex: 70%;/* modif */
+    flex: 70%;
 }
 .bloc-hebergement figure{
     margin-bottom: 20px;
@@ -213,13 +212,13 @@ a.bloc-link{
 }
 .star{
     color: #0065fc;
-    margin-left: 15px;/* modif */
+    margin-left: 15px;
 }
 .grey{
     color: #C3C3C3;
 }
 .bloc-hebergement h3, .bloc-hebergement p {
-    margin: 15px;/* modif */
+    margin: 15px;
 }
 .bloc-hebergement h3{
     font-weight: bolder;
@@ -259,12 +258,11 @@ aside{
     background-color: #F2F2F2;
     margin-left: 25px;
     border-radius: 10px;
-    flex: 30%;/* modif */
+    flex: 30%;
 }
 
 .populaire{
     background-color: #F2F2F2;
-    /* margin-left: 25px; *//* modif */
     border-radius: 10px;
     padding-bottom: 10px;
 }
@@ -278,10 +276,9 @@ aside figure{
     border-radius: 20px;
     width: 100%;
     box-shadow: 10px 10px 10px #C3C3C3;
-    margin: 0;/* modif */
+    margin: 0;
 }
 aside figure img{
-    /* width: 110px; *//* modif */
     max-width: 40%;
     height: 100%;
     object-fit: cover;
@@ -299,7 +296,7 @@ aside a{
     height: 200px;
     text-decoration: none;
     color: black;
-    margin: 20px;/* modif */
+    margin: 20px;
 }
 aside :visited{
     color: black;
@@ -336,7 +333,6 @@ section figcaption h3{
 }
 
 section a{
-    /* display: flex; *//* modif */
     text-decoration: none;
     color: black;
     
@@ -353,8 +349,7 @@ section figure img{
     height: 445px;
 }
 .big{
-    /* width: 350px; *//* modif */
-  flex: 1 25%;/* modif */
+  flex: 1 25%;
 }
 .small img{
     object-fit: cover;
@@ -363,18 +358,17 @@ section figure img{
 
 .allactivity{
     display: flex;
-    /* flex: 1 25%; *//* modif */
 }
 .smallactivity{
     display: flex;
     flex-direction: column;
-    flex: 1 25%;/* modif */
+    flex: 1 25%;
 }
 .smallactivity img{
     height: 160px;
     width: 100%;
 }
-.smallactivity img.more{/* modif */
+.smallactivity img.more{
     height: 200px;
 }
 

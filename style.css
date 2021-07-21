@@ -33,6 +33,9 @@ header{
 nav li{
     margin-left: 50px;
 }
+nav li :hover{
+    border-top: 1px solid blue;
+}
 nav ul{
     list-style-type: none;
     display: flex;
@@ -53,6 +56,9 @@ header nav {
 }
 .inscrire a {
   text-decoration: none;
+}
+.inscrire a:hover{
+    border-top: 1px solid blue;
 }
 
 
@@ -101,10 +107,13 @@ nav{
     display: flex;
     align-items: center;
     font-size: 1.2em;
+    font-weight: bolder;
     flex-wrap: wrap;
 }
 #title__filtres {
   margin-right: 50px;
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 .btn1,.btn2,.btn3,.btn4{
     display: flex;
@@ -174,7 +183,9 @@ nav i{
     border-top-right-radius: 15px;
 }
 .hebergement h2{
-    margin-left: 25px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .heberg{
@@ -241,7 +252,8 @@ a.bloc-link{
 }
 #afficher h3{
     margin-left: 40px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bolder;
 }
 .bloc-hebergement figure{
     min-width: 200px;
@@ -259,6 +271,9 @@ aside{
     margin-left: 25px;
     border-radius: 10px;
     flex: 30%;
+}
+aside h2{
+    font-size: 18px;
 }
 
 .populaire{
@@ -324,8 +339,9 @@ section figure{
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     box-shadow: 10px 10px 10px #f2f2f2;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 10px;
+    
 }
 section figcaption h3{
     padding: 5px;
@@ -365,11 +381,12 @@ section figure img{
     flex: 1 25%;
 }
 .smallactivity img{
-    height: 160px;
+    height: 210px;
     width: 100%;
 }
 .smallactivity img.more{
-    height: 200px;
+    height: 140px;
+    object-position: top;
 }
 
 /* Partie footer */

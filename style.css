@@ -52,7 +52,8 @@ header nav {
 }
 .inscrire{
     padding-left: 50px;
-  align-self: center;
+    align-self: center;
+    font-weight: bolder;
 }
 .inscrire a {
   text-decoration: none;
@@ -95,6 +96,10 @@ form i{
     padding: 8px;
     margin-left: 0px;
 }
+i.fas.fa-search {
+    display: none;
+}
+
 
 
 /* Filtres */
@@ -430,7 +435,12 @@ footer a{
 
 @media screen and ( max-width: 1200px){ 
 
-   
+    i.fas.fa-search {
+        display: none;
+    }
+    .btn1,.btn2,.btn3,.btn4{
+        margin-right: 10px;
+    }
     aside{
         display: block;
         width: 100%;
@@ -444,19 +454,28 @@ footer a{
 /* medium */
 @media screen and (max-width: 768px){
 
-   
+    i.fas.fa-search {
+        display: none;
+    }
+    .btn1,.btn2,.btn3,.btn4{
+        margin-right: 10px;
+    }
     .artside{
         display: flex;
         flex-direction: column-reverse;
     }
-
-  #menu {
-    flex-direction: column-reverse;
-    padding-top: 15px;
-  }
-  .inscrire {
-    align-self: flex-end;
-  }
+    .bloc-hebergement{
+        background-color: white;
+    }
+    .allactivity{
+        flex-wrap: wrap;
+    }
+    .big{
+        flex: 1 50%;
+    }
+    .smallactivity{
+        flex: 1 50%;
+    }
 }
 
 /* Small*/
@@ -480,21 +499,40 @@ footer a{
         margin-left: 20px;
     }
     .inscrire{
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        display: flex;
+        align-self: flex-end;
     }
-    nav ul{
-        padding-left: 0px;
+    nav{
+        display: flex;
     }
+    #menu{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
     section h1, section p{
         margin: 20px;
     }
+    
     .localisation{
         justify-content: center;
     }
+    .bouton{
+        display: none;
+    }
+    i.fas.fa-search {
+        display: flex;
+        font-weight: bold;
+        background-color: #0065fc;
+        color: white;
+        border-radius: 0% 12% 12% 0%;
+        padding: 8px;
+    }
     .filtres{
         margin-left: 20px;
+    }
+    .btn1,.btn2,.btn3,.btn4{
+        padding-right: 0px;
     }
     .info{
         margin-left: 20px;

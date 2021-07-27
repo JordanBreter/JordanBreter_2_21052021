@@ -3,7 +3,7 @@ body {
     font-size: 14px;
 }
 body a:hover{
-    color: red;
+    color: #0065fc;
 }
 .corps{
     display: flex;
@@ -26,15 +26,16 @@ header{
   font-size: 1.1em;
   margin-right: 20px;
 }
-.menu2{
-    display: flex;
-}
 
 nav li{
     margin-left: 50px;
+    border-top: 3px solid transparent;
 }
 nav li :hover{
-    border-top: 1px solid blue;
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+    padding-top: 20px;
+    
 }
 nav ul{
     list-style-type: none;
@@ -44,7 +45,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color: #0065fc;
+    color: black;
 }
 header nav {
     display: flex;
@@ -57,10 +58,9 @@ header nav {
 }
 .inscrire a {
   text-decoration: none;
+  color: #0065fc;
 }
-.inscrire a:hover{
-    border-top: 1px solid blue;
-}
+
 
 
 /* Partie section */
@@ -68,17 +68,19 @@ header nav {
 .localisation{
     display: flex;
     align-items: baseline;
+    
 }
 form i{
     display: inline-flex;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: 20px;
     border-radius: 25% 0% 0% 25%;
     margin-right: 0px;
 }
 .texte{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 1.2em;
     height: 28px;
     padding: 0px 0px 2px 5px;
     border-radius: 1px;
@@ -90,6 +92,7 @@ form i{
     display: inline-flex;
     border: none;
     font-weight: bold;
+    font-size: 1.2em;
     background-color: #0065fc;
     color: white;
     border-radius: 0% 12% 12% 0%;
@@ -391,7 +394,7 @@ section figure img{
 }
 .smallactivity img.more{
     height: 140px;
-    object-position: top;
+    
 }
 
 /* Partie footer */
@@ -501,13 +504,39 @@ footer a{
     .inscrire{
         display: flex;
         align-self: flex-end;
+        margin: 20px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
     nav{
         display: flex;
-    }
-    #menu{
-        display: flex;
         flex-direction: column-reverse;
+        justify-content: space-around;
+        border-bottom:3px solid #F2F2F2;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    nav li{
+        padding-top: 2.5em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 5px;
+        flex: 1 50;
+        text-align: center;
+        margin-left: 0px;
+    }
+    nav li :hover{
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        padding-bottom: 5px;
     }
     
     section h1, section p{
@@ -516,6 +545,8 @@ footer a{
     
     .localisation{
         justify-content: center;
+        width: 80%;
+        margin: auto;
     }
     .bouton{
         display: none;
@@ -523,10 +554,11 @@ footer a{
     i.fas.fa-search {
         display: flex;
         font-weight: bold;
+        font-size: 1.2em;
         background-color: #0065fc;
         color: white;
-        border-radius: 0% 12% 12% 0%;
-        padding: 8px;
+        border-radius: 30% 30% 30% 30%;
+        padding: 20px;
     }
     .filtres{
         margin-left: 20px;

@@ -524,21 +524,26 @@ footer a{
 
     }
     nav li{
-        padding-top: 2.5em;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 5px;
         flex: 1 50;
+        padding-top: 35px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 5px;
         text-align: center;
         margin-left: 0px;
     }
-    nav li :hover{
+    .stick1 :hover{
         color: #0065fc;
         border-bottom: 3px solid #0065fc;
         border-top: none;
         padding-bottom: 5px;
     }
-    
+    .stick2 :hover{
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        padding-bottom: 5px;
+    }
     section h1, section p{
         margin: 20px;
     }

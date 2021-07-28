@@ -20,13 +20,6 @@ header{
    display: flex;
    justify-content: space-between;
 }
-#menu {
-  display: flex;
-  align-items: center;
-  font-size: 1.1em;
-  margin-right: 20px;
-}
-
 nav li{
     margin-left: 50px;
     border-top: 3px solid transparent;
@@ -532,13 +525,13 @@ footer a{
         text-align: center;
         margin-left: 0px;
     }
-    .stick1 :hover{
+    li.stick1 :hover{
         color: #0065fc;
         border-bottom: 3px solid #0065fc;
         border-top: none;
         padding-bottom: 5px;
     }
-    .stick2 :hover{
+    li.stick2 :hover{
         color: #0065fc;
         border-bottom: 3px solid #0065fc;
         border-top: none;

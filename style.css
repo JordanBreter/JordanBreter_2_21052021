@@ -95,6 +95,9 @@ form i{
 i.fas.fa-search {
     display: none;
 }
+button{
+    display: contents;
+}
 
 
 
@@ -180,8 +183,6 @@ nav i{
     margin: auto;
     padding-bottom: 15px;
     padding-top: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 #hebergement h2{
     margin-left: 40px;
@@ -193,8 +194,6 @@ nav i{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     margin: 0 20px;
 }
 a.bloc-link{
@@ -437,6 +436,9 @@ footer a{
     .btn1,.btn2,.btn3,.btn4{
         margin-right: 10px;
     }
+    .bloc-hebergement{
+        margin-top: 10px;
+    }
     aside{
         display: block;
         width: 100%;
@@ -519,15 +521,13 @@ footer a{
     nav li{
         flex: 1 50;
         padding-top: 35px;
-        padding-left: 20px;
-        padding-right: 20px;
         padding-bottom: 5px;
         text-align: center;
         margin-left: 0px;
     }
     li a{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
     li.stick1 :hover{
         color: #0065fc;
@@ -552,6 +552,9 @@ footer a{
     }
     .bouton{
         display: none;
+    }
+    button{
+        display: contents;
     }
     i.fas.fa-search {
         display: flex;
@@ -583,6 +586,9 @@ footer a{
     
     .bloc-hebergement{
         background-color: white;
+    }
+    .bloc-hebergement a{
+        flex: 1 100%;
     }
     .bloc-hebergement figure{
         width: 90%;
@@ -625,7 +631,9 @@ footer a{
         justify-content: center;
         margin-bottom: 20px;
     }
-    
+    img .up{
+        object-position: top;
+    }    
     .allactivity img{
         height: 150px;
         object-fit: cover;
@@ -646,6 +654,9 @@ footer a{
     
     footer h3{
         margin-bottom: 0px;
+    }
+    footer li a{
+        padding: 0px;
     }
     #background{
         display: flex;
